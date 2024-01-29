@@ -1,0 +1,141 @@
+body {
+    font-family: Courier, monospace;
+    margin: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center; /* Center text in the body */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2ecc71; /* Green */
+    color: #fff; /* White */
+}
+
+h1 {
+    font-weight: bold; /* Make the title bold */
+    color: #fff; /* White */
+    margin: 0; /* Remove default margin */
+}
+
+h2 {
+    color: #27ae60; /* Dark green for h2 */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    margin-left: auto; /* Moves the navigation to the right */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White */
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #27ae60; /* Darker green on hover */
+}
+
+main {
+    text-align: left; /* Align main content to the left */
+}
+
+section {
+    background-color: #fff; /* White */
+    padding: 20px;
+    margin: 20px 0; /* Add some vertical margin for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    section {
+        max-width: 800px; /* Set a maximum width for larger screens */
+        margin: 20px auto; /* Center the section horizontally with auto margins */
+    }
+}
+p {
+    padding: 5px;
+    background-color: #ffffff; /* Green */
+    color: #333; /* White */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px; /* Set the font size for the footer */
+}
+/* Your existing styles... */
+
+#blogForm {
+    max-width: 600px;
+    font-family: Courier, monospace;
+    margin: 0 auto;
+    text-align: center; /* Center the form content */
+}
+
+#blogForm label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#blogForm input[type="text"],
+#blogForm textarea,
+#blogForm input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style for the input group */
+#blogForm .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+/* Arrange Tags and Creator input fields on the same line */
+#blogForm .input-half {
+    width: 48%; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+#blogForm #blogTags {
+    float: left; /* Align Tags to the left */
+}
+
+#blogForm #blogCreator {
+    float: right; /* Align Creator to the right */
+}
+
+#blogForm input[type="file"] {
+    clear: both; /* Clear the floats for the file input */
+    margin-top: 0.5em;
+}
+
+#blogForm input[type="submit"] {
+    display: inline-block; /* Set the button to be an inline block */
+    background-color: #4caf50; /* Green */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#blogForm input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Position the button above the footer */
+#blogForm input[type="submit"] {
+    position: relative;
+    bottom: 0;
+}
+
+/* Your existing styles... */
